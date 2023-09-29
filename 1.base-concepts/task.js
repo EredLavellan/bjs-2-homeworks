@@ -5,8 +5,8 @@ function solveEquation(a, b, c) {
   if (D > 0) {
     let x1;
     let x2;
-    x1 = (-b - Math.sqrt(D)) / (2 * a);
-    x2 = (-b + Math.sqrt(D)) / (2 * a);
+    x1 = (-b + Math.sqrt(D)) / (2 * a);
+    x2 = (-b - Math.sqrt(D)) / (2 * a);
     arr.push(x1, x2);
   } else if (D == 0) {
     let x;
