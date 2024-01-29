@@ -12,7 +12,7 @@ function getArrayParams(...arr) {
     sum += arr[i];
   }
   let avg = Number((sum / arr.length).toFixed(2));
-  return obj = { max: max, min: min, avg: avg };
+  return { max: max, min: min, avg: avg };
 }
 
 function summElementsWorker(...arr) {
@@ -45,7 +45,7 @@ function differenceEvenOddWorker(...arr) {
     } else {
         sumOddElement += arr[i];
     }
-    if (arr === undefined || arr.length == 0) {
+    if (arr.length == 0) {
     return 0;
 }
   }
@@ -55,13 +55,13 @@ function differenceEvenOddWorker(...arr) {
 function averageEvenElementsWorker(...arr) {
   let sumEvenElement = 0;
   let countEvenElement = 0;
+  if (arr.length == 0) {
   for (let i=0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
       sumEvenElement += arr[i];
       countEvenElement++;
     }
   }
-  if (arr === undefined || arr.length == 0) {
   return 0;
 }
   return sumEvenElement / countEvenElement;
