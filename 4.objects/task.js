@@ -11,16 +11,17 @@ let student2 = new Student("Buzz", "female", 35);
 
 
 Student.prototype.setSubject = function (subjectName) {
-    return this.setSubject = subjectName;
+    this.setSubject = subjectName;
 
 }
 
 Student.prototype.addMarks = function (...marks) {
   if(this.marks === undefined){
-        this.marks = [mark];
-    } else {
-        this.marks.push(mark);
+        return 0;
     }
+        this.marks = [...marks];
+        this.marks.push(marks);
+
 
 }
 
